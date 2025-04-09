@@ -28,5 +28,4 @@ class MisionResponse(MisionBase):
     fecha_inicio: datetime
     
     class Config:
-        orm_mode = True
         from_attributes = True

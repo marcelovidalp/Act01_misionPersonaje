@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
-from .Base import Base
+from database import Base
 
 class MisionPersonaje(Base):
     __tablename__ = 'mision_personaje'

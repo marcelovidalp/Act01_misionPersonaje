@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime
 from sqlalchemy.orm import relationship
-from .Base import Base
+from database import Base
 
 class Personaje(Base):
     __tablename__ = 'personajes'

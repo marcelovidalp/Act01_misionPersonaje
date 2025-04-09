@@ -1,7 +1,7 @@
 from collections import deque
 from typing import List, Optional
-from ..models.Mision import Mision
-from ..dto.mision_dto import EstadoMision
+from models.Mision import Mision
+from dto.mision_dto import EstadoMision
 
 class MisionQueue:
     def __init__(self):

@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from ..models.Mision import Mision
-from ..models.MisionPersonaje import MisionPersonaje
-from ..dto.mision_dto import MisionCreate, MisionUpdate, EstadoMision
+from models.Mision import Mision
+from models.MisionPersonaje import MisionPersonaje
+from dto.mision_dto import MisionCreate, MisionUpdate, EstadoMision
 
 class MisionRepository:
     def __init__(self, db: Session):
@@ -18,18 +18,18 @@ class MisionRepository:
         return self.db.query(Mision).filter(Mision.estado == estado).all()
     
     def create(self, mision: MisionCreate) -> Mision:
-        db_mision = Mision(**mision.dict(), estado="pendiente")
+        db_mision = Mision(**mision.model_dump(), estado="pendiente")
         self.db.add(db_mision)
         self.db.commit()
         self.db.refresh(db_mision)
         return db_mision
     
-    def update(self, mision_id: int, mision: MisionUpdate) -> Optional[Mision]:
+    def update(self, mision_id: int, mision_data: dict) -> Optional[Mision]:
         db_mision = self.get_by_id(mision_id)
         if db_mision is None:
             return None
         
-        for key, value in mision.dict(exclude_unset=True).items():
+        for key, value in mision_data.items():
             setattr(db_mision, key, value)
         
         self.db.commit()
