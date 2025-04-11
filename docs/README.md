@@ -1,4 +1,4 @@
-# Documentación Sistema de Misiones RPG
+# Sistema de Misiones RPG
 
 ## Índice
 
