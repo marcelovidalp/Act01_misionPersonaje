@@ -1,4 +1,4 @@
-# Implementación del TDA_Cola en el Sistema de Misiones
+# Implementación del TDA_Cola en el Sistema de Misiones RPG
 
 ## ¿Qué es un TDA_Cola?
 
