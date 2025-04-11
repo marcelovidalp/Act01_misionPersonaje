@@ -1,4 +1,4 @@
-# Sistema de Misiones RPG
+# Documentación Sistema de Misiones RPG
 
 ## Índice
 
@@ -8,7 +8,8 @@
 4. [API REST con FastAPI](./api-endpoints.md)
 5. [Guía de instalación y uso](./instalacion.md)
 6. [Modelos ORM y SQLAlchemy](./orm-models.md)
-7. [Diagramas](#diagramas)
+7. [Data Transfer Objects (DTOs)](./data-transfer-objects.md)
+8. [Diagramas](#diagramas)
    - [Diagrama de Clases](./diagramas-clase.md)
    - [Diagrama de Componentes](./diagramas-componentes.md)
    - [Diagramas de Patrones de Diseño](./diagramas-patrones.md)

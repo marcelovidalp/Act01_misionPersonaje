@@ -57,4 +57,5 @@ La documentación completa del sistema se encuentra en el directorio `docs/`:
 - [API REST con FastAPI](./docs/api-endpoints.md)
 - [Guía de instalación y uso](./docs/instalacion.md)
 - [Modelos ORM y SQLAlchemy](./docs/orm-models.md)
+- [Data Transfer Objects (DTOs)](./docs/data-transfer-objects.md)
 - [Diagramas de clases y componentes](./docs/diagramas-clase.md)
