@@ -4,7 +4,7 @@
 
 1. [Estructura de la aplicación](./estructura.md)
 2. [Patrones de diseño implementados](./patrones-diseno.md)
-3. [Sistema de cola FIFO](./tda-cola.md)
+3. [Sistema TDA-Cola](./tda-cola.md)
 4. [API REST con FastAPI](./api-endpoints.md)
 5. [Guía de instalación y uso](./instalacion.md)
 6. [Modelos ORM y SQLAlchemy](./orm-models.md)
